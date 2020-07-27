@@ -9,6 +9,7 @@ destinations = {
     'dpdf': r"C:\Users\user\Desktop\Ebook",
     'dmp3': r"C:\Users\user\Desktop\MUSIC",
     'dmkv': r"C:\Users\user\Desktop\films",
+    'davi': r"C:\Users\user\Desktop\films",
     'djpg': r"C:\Users\user\Desktop\Images",
 }
 #Filemover fucntion
@@ -32,6 +33,11 @@ def filemover():
 
             elif filename.endswith('{}'.format('.mp4')) or filename.endswith('{}'.format('.mkv')):
                 shutil.move(os.path.join(folders, filename), os.path.join(destinations['dmkv'], filename))
+
+                print('Moving done!!')
+                
+                elif filename.endswith('{}'.format('.mp4')) or filename.endswith('{}'.format('.avi')):
+                shutil.move(os.path.join(folders, filename), os.path.join(destinations['davi'], filename))
 
                 print('Moving done!!')
 
