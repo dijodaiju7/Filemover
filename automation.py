@@ -5,6 +5,7 @@ import time
 #Path of the folder that contains the files
 path = r"C:/Users/user/Desktop/ts"
 #Destination folders(dictionary)
+#Can be changed to your directory
 destinations = {
     'dpdf': r"C:\Users\user\Desktop\Ebook",
     'dmp3': r"C:\Users\user\Desktop\MUSIC",
